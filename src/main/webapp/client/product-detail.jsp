@@ -183,7 +183,6 @@
 
         <!-- Rating Summary -->
   
-<!-- Rating Summary -->
 <div class="rating-summary">
   <div class="row align-items-center">
     <div class="col-md-3 text-center border-end">
@@ -197,31 +196,7 @@
       </div>
       <div class="text-muted">${totalReviews != null ? totalReviews : 0} đánh giá</div>
     </div>
-
-<!-- Hiển thị sao: full stars, half star nếu có, còn lại empty -->
-<div class="rating-stars mb-2" aria-hidden="true">
-  <c:set var="full" value="${avgFullStars != null ? avgFullStars : 0}" />
-  <c:set var="hasHalf" value="${avgHasHalf}" />
-
-  <!-- full stars -->
-  <c:forEach begin="1" end="${full}" var="i">
-    <i class="fa-solid fa-star rv-star"></i>
-  </c:forEach>
-
-  <!-- half star -->
-  <c:if test="${hasHalf}">
-    <i class="fa-solid fa-star-half-stroke rv-star"></i>
-  </c:if>
-
-  <!-- remaining empty stars -->
-  <c:set var="remaining" value="${5 - full - (hasHalf ? 1 : 0)}" />
-  <c:forEach begin="1" end="${remaining}" var="j">
-    <i class="fa-regular fa-star text-muted"></i>
-  </c:forEach>
-</div>
-
-          </div>
-        </div>
+  </div>
 
         <!-- Review Filters -->
 <div class="d-flex gap-2 mb-3 flex-wrap">
