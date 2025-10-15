@@ -181,8 +181,9 @@
           <c:remove var="reviewError" scope="session"/>
         </c:if>
 
-        <!-- Rating Summary -->
   
+<!-- Rating Summary -->
+
 <div class="rating-summary">
   <div class="row align-items-center">
     <div class="col-md-3 text-center border-end">
@@ -197,6 +198,7 @@
       <div class="text-muted">${totalReviews != null ? totalReviews : 0} đánh giá</div>
     </div>
   </div>
+</div>
 
         <!-- Review Filters -->
 <div class="d-flex gap-2 mb-3 flex-wrap">
