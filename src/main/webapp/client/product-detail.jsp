@@ -12,7 +12,42 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 
-
+    <style>
+    body { background:#f5f7fb; }
+    .container-giant { max-width:1200px; }
+    .card-soft { background:#fff; border-radius:14px; box-shadow:0 10px 28px rgba(0,0,0,.06); border:0; }
+    .price-main { font-size:2rem; font-weight:800; color:#e11d48; }
+    .promo-badge { background:#fff0f2; color:#e11d48; border:1px dashed #e11d48; padding:2px 8px; border-radius:8px; font-weight:600; }
+    .thumb { width:68px; height:68px; object-fit:cover; border:1px solid #e5e7eb; border-radius:10px; cursor:pointer; }
+    .thumb.active { outline:3px solid #2563eb; }
+    .main-img { width:100%; border:1px solid #e5e7eb; border-radius:14px; background:#fff; }
+    .spec-table td { padding:.6rem .75rem; border-color:#eef2f7!important; }
+    .sticky-right { position:sticky; top:16px; }
+    .section-title { font-weight:800; font-size:1.25rem; }
+    .rv-star { color:#f59e0b; }
+    
+    /* Review specific styles */
+    .rating-summary { background:#fffbeb; border-radius:12px; padding:24px; margin-bottom:24px; }
+    .rating-number { font-size:3rem; font-weight:800; color:#f59e0b; line-height:1; }
+    .rating-stars { font-size:1.5rem; color:#f59e0b; }
+    .rating-bar { height:8px; background:#e5e7eb; border-radius:4px; overflow:hidden; }
+    .rating-bar-fill { height:100%; background:#f59e0b; transition:width 0.3s; }
+    .filter-btn { border:1px solid #e5e7eb; border-radius:8px; padding:8px 16px; background:#fff; cursor:pointer; transition:all 0.2s; }
+    .filter-btn:hover { border-color:#f59e0b; background:#fffbeb; }
+    .filter-btn.active { border-color:#f59e0b; background:#f59e0b; color:#fff; }
+    .review-item { border:1px solid #e5e7eb; border-radius:12px; padding:20px; margin-bottom:16px; background:#fff; }
+    .review-avatar { width:48px; height:48px; border-radius:50%; background:#e5e7eb; display:flex; align-items:center; justify-content:center; font-weight:700; color:#6b7280; }
+    .verified-badge { background:#10b981; color:#fff; padding:2px 8px; border-radius:4px; font-size:0.75rem; font-weight:600; }
+    .star-rating { display:flex; gap:8px; font-size:2rem; }
+    .star-rating input { display:none; }
+    .star-rating label { cursor:pointer; color:#e5e7eb; transition:color 0.2s; }
+    .star-rating label:hover,
+    .star-rating label:hover ~ label,
+    .star-rating input:checked ~ label { color:#f59e0b; }
+    .review-form { background:#f9fafb; border-radius:12px; padding:24px; margin-bottom:24px; }
+  </style>
+</head>
+<body>
     </head>
     <body>
 
